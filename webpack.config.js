@@ -19,7 +19,12 @@ var config = {
                 presets: ['es2015', 'react']
             }
         }]
-    }
+    },
+    externals: {
+        // exclude react
+        "react": "React",
+        "react-dom": "ReactDOM"
+    },
 };
 
 module.exports = config;
